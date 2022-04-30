@@ -9,7 +9,7 @@ import NavLink from "./NavLink";
 
 export default function Navbar() {
   return (
-    <Popover as="nav" className="bg-lightgreen relative">
+    <Popover as="nav" className="bg-lightgreen relative z-50">
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">

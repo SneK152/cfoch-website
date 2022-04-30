@@ -46,7 +46,7 @@ function Dropdown({ children, title, mobile, navLink }: DropdownLinkProps) {
             leaveTo="transform opacity-0 scale-95"
           >
             <Menu.Items
-              className={`origin-top-right absolute ${
+              className={`origin-top-right absolute z-50 ${
                 mobile ? "left-0" : "right-0"
               } mt-2 w-56 rounded-md shadow-lg bg-blue ring-1 ring-black ring-opacity-5 focus:outline-none`}
             >
