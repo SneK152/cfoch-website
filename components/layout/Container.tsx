@@ -11,7 +11,10 @@ export default function Container(props: ContainerProps) {
   return (
     <>
       <Meta title={props.title} />
-      <Navbar />
+      <div className="fixed w-full">
+        <Navbar />
+      </div>
+      <div className="bg-lightgreen h-16"></div>
       {props.children}
     </>
   );

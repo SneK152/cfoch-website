@@ -2,14 +2,12 @@ import { Popover } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import navLinks from "@lib/data/navLinks";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { Fragment } from "react";
 import DropdownButton from "./DropdownButton";
 import DropdownLink from "./DropdownLink";
 import NavLink from "./NavLink";
 
 export default function Navbar() {
-  const router = useRouter();
   return (
     <Popover as="nav" className="bg-lightgreen relative">
       {({ open }) => (
