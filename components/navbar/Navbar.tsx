@@ -1,8 +1,12 @@
-import { Disclosure, Popover } from "@headlessui/react";
+import { Popover } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import navLinks from "@lib/data/navLinks";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Fragment } from "react";
+import DropdownButton from "./DropdownButton";
+import DropdownLink from "./DropdownLink";
+import NavLink from "./NavLink";
 
 export default function Navbar() {
   const router = useRouter();
@@ -23,40 +27,45 @@ export default function Navbar() {
                 </Popover.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
-                <p className="font-bold font-display text-xl">CFOCH</p>
+                <Link href="/">
+                  <a className="font-bold font-display text-xl">CFOCH</a>
+                </Link>
                 <div className="hidden sm:block">
-                  <div className="flex gap-4 items-center h-full">
-                    {navLinks.map((item) => (
-                      <Link key={item.name} href={item.href}>
-                        <a
-                          className={`${
-                            router.pathname === item.href ? "font-bold" : ""
-                          } rounded-md text-base`}
-                        >
+                  <ul className="flex gap-4 items-center h-full">
+                    {navLinks.map((item) =>
+                      !item.dropdown ? (
+                        <NavLink key={item.href} href={item.href}>
                           {item.name}
-                        </a>
-                      </Link>
-                    ))}
-                  </div>
+                        </NavLink>
+                      ) : (
+                        <DropdownLink
+                          key={item.href}
+                          title={item.name}
+                          navLink={item}
+                        >
+                          {item.dropdown.map((d) => (
+                            <DropdownButton key={d.href} href={d.href}>
+                              {d.name}
+                            </DropdownButton>
+                          ))}
+                        </DropdownLink>
+                      )
+                    )}
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
           <Popover.Panel className="sm:hidden absolute bg-lightgreen w-full">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <ul className="px-2 pt-2 pb-3 space-y-1">
               {navLinks.map((item) => (
-                <Popover.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={`block text-base ${
-                    router.pathname === item.href ? "font-bold" : ""
-                  }`}
-                >
-                  {item.name}
+                <Popover.Button key={item.name} as={Fragment}>
+                  <NavLink href={item.href} className="block">
+                    {item.name}
+                  </NavLink>
                 </Popover.Button>
               ))}
-            </div>
+            </ul>
           </Popover.Panel>
         </>
       )}

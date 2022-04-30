@@ -11,7 +11,7 @@ module.exports = {
         darkgreen: colors.green[800],
         lightgreen: colors.emerald[400],
         blue: {
-          DEFAULT: colors.cyan[500],
+          DEFAULT: colors.cyan[200],
         },
         black: "#031926",
       },
