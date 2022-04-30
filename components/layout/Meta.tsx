@@ -1,4 +1,4 @@
-import { description, keywords, title } from "@lib/constants";
+import { description, keywords, title } from "@lib/data/constants";
 import Head from "next/head";
 
 interface MetaProps {
