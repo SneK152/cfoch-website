@@ -13,9 +13,7 @@ export default function Container(props: ContainerProps) {
       <Navbar />
       <div className="bg-lightgreen h-16"></div>
       <Meta title={props.title} />
-      <div className="bg-gradient-to-r from-blue to-lightgreen">
-        {props.children}
-      </div>
+      <div className="bg-blue">{props.children}</div>
     </>
   );
 }
