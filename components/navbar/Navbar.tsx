@@ -9,7 +9,7 @@ import NavLink from "./NavLink";
 
 export default function Navbar() {
   return (
-    <Popover as="nav" className="bg-lightgreen relative z-50">
+    <Popover as="nav" className="bg-lightgreen z-50 fixed w-full">
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">
@@ -54,7 +54,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <Popover.Panel className="sm:hidden absolute bg-lightgreen w-full">
+          <Popover.Panel className="sm:hidden absolute bg-lightgreen w-full z-50">
             <ul className="px-2 pt-2 pb-3 space-y-1">
               {navLinks.map((item) => (
                 <Popover.Button key={item.name} as={Fragment}>

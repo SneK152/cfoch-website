@@ -10,12 +10,12 @@ interface ContainerProps {
 export default function Container(props: ContainerProps) {
   return (
     <>
-      <Meta title={props.title} />
-      <div className="fixed w-full">
-        <Navbar />
-      </div>
+      <Navbar />
       <div className="bg-lightgreen h-16"></div>
-      {props.children}
+      <Meta title={props.title} />
+      <div className="bg-gradient-to-r from-blue to-lightgreen">
+        {props.children}
+      </div>
     </>
   );
 }
