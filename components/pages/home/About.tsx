@@ -28,9 +28,8 @@ export default function About() {
   const buttonRef = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     setInterval(() => {
-      console.log("hi");
       buttonRef.current!.click();
-    }, 2000);
+    }, 3000);
     return () => clearInterval();
   }, []);
   return (
