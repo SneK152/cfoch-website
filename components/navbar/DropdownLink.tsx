@@ -21,9 +21,7 @@ function Dropdown({ children, title, mobile, navLink }: DropdownLinkProps) {
           <div className="flex h-full">
             <Menu.Button
               className={`w-full rounded-md flex gap-0.5 items-center  ${
-                navLink.dropdown!.some(
-                  (dropDownItem) => dropDownItem.href === router.pathname
-                )
+                router.pathname.includes(navLink.href)
                   ? "font-bold"
                   : "font-normal"
               } focus:outline-none z-0`}
