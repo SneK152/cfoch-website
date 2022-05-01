@@ -9,10 +9,16 @@ export default function Hero() {
       <Image
         src="/homepage.jpeg"
         layout="fill"
+        quality={80}
         alt="Image of a mushroom surrounded by grass"
         objectFit="cover"
-        className="object-center -z-30"
+        className="object-center -z-30 select-none selection:hidden"
       />
+      <div className="h-[45vh] sm:h-[65vh] md:h-full lg:h-[50vh] xl:h-[60vh] bg-transparent w-full grid place-items-center z-10">
+        <h1 className="text-white font-display font-bold text-7xl max-w-[15ch] text-center">
+          Care for our Common Home
+        </h1>
+      </div>
     </div>
   );
 }
