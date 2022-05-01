@@ -1,6 +1,5 @@
 import TreeDown from "@components/icons/TreeDown";
 import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/solid";
 import NavLink from "@lib/types/NavLink";
 import { useRouter } from "next/router";
 import { Fragment, ReactNode } from "react";
@@ -20,7 +19,7 @@ function Dropdown({ children, title, mobile, navLink }: DropdownLinkProps) {
         <>
           <div className="flex h-full">
             <Menu.Button
-              className={`w-full rounded-md flex gap-0.5 items-center  ${
+              className={`w-full rounded-md flex gap-0.5 items-center ${
                 router.pathname.includes(navLink.href)
                   ? "font-bold"
                   : "font-normal"
