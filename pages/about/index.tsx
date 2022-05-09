@@ -1,10 +1,8 @@
-import navLinks from "@lib/data/navLinks";
 import Page from "@lib/types/Page";
-
-const links = navLinks.filter((l) => l.name.includes("About"))[0].dropdown!;
+import LinkPage from "@components/layout/LinkPage";
 
 const AboutPage: Page = () => {
-  return <h1>Hello world!</h1>;
+  return <LinkPage title="About" headingTitle="About Us" />;
 };
 
 AboutPage.title = "About";
