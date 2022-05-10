@@ -5,6 +5,7 @@ interface SectionProps {
   side: "left" | "right";
   image: string;
   children: ReactNode;
+  title: string;
 }
 
 export default function Section(props: SectionProps) {
@@ -26,11 +27,12 @@ export default function Section(props: SectionProps) {
         />
       </div>
       <div
-        className={`col-span-7 ${
+        className={`col-span-7 px-10 flex flex-col justify-center ${
           props.side === "left" ? "order-2" : "order-1"
         }`}
       >
-        <p>hsdf</p>
+        <h1 className="text-3xl font-display font-bold">{props.title}</h1>
+        <p className="text-xl">{props.children}</p>
       </div>
     </div>
   );

@@ -6,14 +6,14 @@ const Organization: Page = () => {
   return (
     <>
       <Banner title="Our Organization" />
-      <Section side="left" image="/homepage.jpeg">
+      <Section side="left" image="/homepage.jpeg" title="Title here">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et
         ultrices neque ornare aenean. Interdum varius sit amet mattis vulputate
         enim nulla aliquet. In nisl nisi scelerisque eu ultrices vitae auctor eu
         augue. Odio morbi quis commodo odio aenean sed adipiscing diam.
       </Section>
-      <Section side="right" image="/homepage.jpeg">
+      <Section side="right" image="/homepage.jpeg" title="Title here">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et
         ultrices neque ornare aenean. Interdum varius sit amet mattis vulputate
