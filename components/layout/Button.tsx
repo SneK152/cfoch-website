@@ -14,7 +14,7 @@ export default function Button(props: ButtonProps) {
       <a
         className={`${
           props.className || ""
-        } font-display pt-2 pb-1 px-6 rounded-full`}
+        } font-display pt-2 pb-1 px-6 rounded-full shadow-md`}
       >
         {props.children}
       </a>
@@ -23,7 +23,7 @@ export default function Button(props: ButtonProps) {
     <button
       className={`${
         props.className || ""
-      } font-display pt-2 pb-1 px-6 rounded-full`}
+      } font-display pt-2 pb-1 px-6 rounded-full shadow-md`}
       onClick={props.onClick}
     >
       {props.children}

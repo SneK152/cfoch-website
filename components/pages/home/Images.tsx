@@ -12,7 +12,7 @@ export default function Images() {
           width={10000}
           quality={70}
           objectFit="cover"
-          className="rounded-xl"
+          className="rounded-xl shadow-md"
           key={i}
         />
       ))}

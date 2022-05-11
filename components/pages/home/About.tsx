@@ -27,7 +27,7 @@ export default function About() {
 
   return (
     <div className="w-full h-96 grid grid-cols-12 gap-10 p-10 overflow-hidden">
-      <div className="relative overflow-hidden bg-white rounded-xl cursor-grab active:cursor-grabbing col-span-4">
+      <div className="relative overflow-hidden bg-white rounded-xl cursor-grab active:cursor-grabbing col-span-4 shadow-md">
         <button
           className="absolute h-full top-0 bottom-0 left-0 z-[1] flex items-center justify-center sm:w-[10%] w-[15%] p-0 text-white text-center bg-none border-0"
           onClick={slideToPrevItem}
@@ -44,12 +44,13 @@ export default function About() {
       </div>
       <div className="grid place-items-center col-span-5">
         <p className="text-xl font-light">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris
-          pharetra et ultrices neque ornare aenean. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Mauris pharetra et ultrices neque
-          ornare aenean.
+          Care for our Common Home Foundation is committed to journeying with
+          youth to create a platform for promoting environmental and social
+          innovations, aiming to uphold environmental justice and realize
+          sustainable development. Our goal is to improve the common home we
+          share by enhancing environmental awareness and doing our part of each
+          person{"'"}s social responsibility, regardless of age, to create a
+          hope-filled future.
         </p>
       </div>
       <div className="flex flex-col justify-center items-center gap-3 col-span-3">
