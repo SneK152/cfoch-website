@@ -54,14 +54,17 @@ export default function About() {
         </p>
       </div>
       <div className="flex flex-col justify-center items-center gap-3 col-span-3">
-        <Button className="bg-darkgreen text-white text-lg w-full">
+        <Button
+          className="bg-darkgreen text-white text-lg w-full"
+          href="/about/organization"
+        >
           Learn More
         </Button>
-        <Button className="bg-black text-white text-lg w-full">
+        <Button className="bg-black text-white text-lg w-full" href="/events">
           Upcoming Events
         </Button>
-        <Button className="bg-lightgreen text-black text-lg w-full">
-          Get Involved
+        <Button className="bg-lightgreen text-black text-lg w-full" href="">
+          Donate
         </Button>
       </div>
     </div>
