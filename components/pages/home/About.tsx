@@ -63,7 +63,10 @@ export default function About() {
         <Button className="bg-black text-white text-lg w-full" href="/events">
           Upcoming Events
         </Button>
-        <Button className="bg-lightgreen text-black text-lg w-full" href="">
+        <Button
+          className="bg-lightgreen text-black text-lg w-full"
+          href="/get-involved/donate"
+        >
           Donate
         </Button>
       </div>
