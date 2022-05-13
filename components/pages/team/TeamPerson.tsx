@@ -6,7 +6,7 @@ interface TeamPersonProps {
 }
 export default function TeamPerson(props: TeamPersonProps) {
   return (
-    <div className="flex flex-col gap-3 items-center bg-white rounded-xl shadow-md p-5">
+    <div className="flex flex-col items-center bg-white rounded-xl shadow-md p-5">
       <Image
         src={props.person.image}
         alt={props.person.name}
@@ -15,13 +15,15 @@ export default function TeamPerson(props: TeamPersonProps) {
         className="object-center object-cover rounded-full"
         layout="fixed"
       />
-      <h1 className="text-xl font-display font-bold">{props.person.name}</h1>
-      <p>
+      <h1 className="text-4xl mt-3 font-display font-bold">
+        {props.person.name}
+      </h1>
+      <p className="text-xl">
         {props.person.roles.map((r, i) =>
           i === props.person.roles.length - 1 ? <>{r}</> : <>{r}, </>
         )}
       </p>
-      <p>{props.person.description}</p>
+      <p className="text-base text-left mt-3">{props.person.description}</p>
     </div>
   );
 }
