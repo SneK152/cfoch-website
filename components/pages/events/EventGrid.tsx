@@ -13,7 +13,7 @@ export default function EventGrid(props: EventGridProps) {
       </h1>
       {props.events.length !== 0 ? (
         <div
-          className={`grid mt-2 ${
+          className={`grid mt-2 gap-5 ${
             props.events.length === 1 ? "grid-cols-1" : "grid-cols-2"
           }`}
         >
