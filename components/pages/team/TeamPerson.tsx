@@ -18,7 +18,7 @@ export default function TeamPerson(props: TeamPersonProps) {
       <h1 className="text-4xl mt-3 font-display font-bold">
         {props.person.name}
       </h1>
-      <p className="text-xl">
+      <p className="text-xl text-center">
         {props.person.roles.map((r, i) =>
           i === props.person.roles.length - 1 ? <>{r}</> : <>{r}, </>
         )}

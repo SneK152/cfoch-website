@@ -10,10 +10,10 @@ interface SectionProps {
 
 export default function Section(props: SectionProps) {
   return (
-    <div className="w-full grid grid-cols-12 h-96">
+    <div className="w-full grid p-6 gap-5 grid-cols-12 sm:h-96">
       <div
-        className={`col-span-5 relative ${
-          props.side === "left" ? "order-1" : "order-2"
+        className={`sm:col-span-5 col-span-12 relative h-36 w-full sm:h-full ${
+          props.side === "left" ? "sm:order-1" : "sm:order-2"
         }`}
       >
         <Image
@@ -27,8 +27,8 @@ export default function Section(props: SectionProps) {
         />
       </div>
       <div
-        className={`col-span-7 px-10 flex flex-col justify-center ${
-          props.side === "left" ? "order-2" : "order-1"
+        className={`sm:col-span-7 col-span-12 sm:px-10 px-5 flex flex-col justify-center ${
+          props.side === "left" ? "sm:order-2" : "sm:order-1"
         }`}
       >
         <h1 className="text-3xl font-display font-bold">{props.title}</h1>

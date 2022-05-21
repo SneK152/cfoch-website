@@ -3,7 +3,7 @@ import TeamPerson from "./TeamPerson";
 
 export default function TeamGrid() {
   return (
-    <div className="grid grid-cols-3 p-10 gap-5">
+    <div className="grid sm:grid-cols-3 grid-cols-1 sm:p-10 p-5 gap-5">
       {team.map((person) => (
         <TeamPerson key={person.name} person={person} />
       ))}

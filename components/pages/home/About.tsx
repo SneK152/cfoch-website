@@ -26,8 +26,8 @@ export default function About() {
     });
 
   return (
-    <div className="w-full h-96 grid grid-cols-12 gap-10 p-10 overflow-hidden">
-      <div className="relative overflow-hidden bg-white rounded-xl cursor-grab active:cursor-grabbing col-span-4 shadow-md">
+    <div className="w-full grid sm:grid-cols-12 grid-cols-1 sm:gap-x-10 gap-y-10 p-10 overflow-hidden">
+      <div className="relative overflow-hidden bg-white rounded-xl cursor-grab active:cursor-grabbing sm:col-span-4 shadow-md h-96">
         <button
           className="absolute h-full top-0 bottom-0 left-0 z-[1] flex items-center justify-center sm:w-[10%] w-[15%] p-0 text-white text-center bg-none border-0"
           onClick={slideToPrevItem}

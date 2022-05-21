@@ -35,7 +35,7 @@ export default function Banner(props: BannerProps) {
         objectFit="cover"
         className="object-center z-0 select-none selection:hidden"
       />
-      <div className="bg-transparent w-full flex justify-center mt-[15vh] z-30">
+      <div className="bg-transparent w-full flex justify-center mt-[10vh] z-30">
         <h1 className="text-white font-display font-bold text-3xl sm:text-4xl md:text-6xl lg:text-5xl xl:text-6xl max-w-[15ch] text-center">
           {props.title}
         </h1>

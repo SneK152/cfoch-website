@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Images() {
   return (
-    <div className="flex h-full w-full py-5 px-11 gap-6">
+    <div className="flex h-full w-full py-5 px-11 sm:gap-6 gap-1">
       {homepageImageCollage.map((i) => (
         <Image
           src={i}

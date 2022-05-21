@@ -1,13 +1,21 @@
-import { Popover } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import TreeDown from "@components/icons/TreeDown";
+import { Disclosure, Popover } from "@headlessui/react";
+import {
+  ArrowRightIcon,
+  ChevronDownIcon,
+  MenuIcon,
+  XIcon,
+} from "@heroicons/react/outline";
 import navLinks from "@lib/data/navLinks";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Fragment } from "react";
 import DropdownButton from "./DropdownButton";
 import DropdownLink from "./DropdownLink";
 import NavLink from "./NavLink";
 
 export default function Navbar() {
+  const router = useRouter();
   return (
     <Popover as="nav" className="bg-lightgreen z-50 fixed w-full shadow-lg">
       {({ open }) => (
@@ -55,15 +63,80 @@ export default function Navbar() {
             </div>
           </div>
           <Popover.Panel className="sm:hidden absolute bg-lightgreen w-full z-50">
-            <ul className="px-2 pt-2 pb-3 space-y-1">
-              {navLinks.map((item) => (
+            {({ close }) => (
+              <ul className="px-2 pt-2 pb-3 space-y-1">
+                {/* {navLinks.map((item) => (
                 <Popover.Button key={item.name} as={Fragment}>
                   <NavLink href={item.href} className="block">
                     {item.name}
                   </NavLink>
                 </Popover.Button>
-              ))}
-            </ul>
+              ))} */}
+                {navLinks.map((navLink, i) => (
+                  <Fragment key={i}>
+                    {!navLink.dropdown ? (
+                      <button className="block" onClick={() => close()}>
+                        <NavLink
+                          href={navLink.href}
+                          {...(navLink.customProps ? navLink.customProps : {})}
+                        >
+                          {navLink.name}{" "}
+                          {navLink.customProps?.target && (
+                            <ArrowRightIcon className="h-4 w-4 inline-block transform -rotate-45" />
+                          )}
+                        </NavLink>
+                      </button>
+                    ) : (
+                      <Disclosure>
+                        {({ open }) => (
+                          <>
+                            <Disclosure.Button
+                              className={`block font-writing underline-offset-1 whitespace-nowrap ${
+                                router.pathname.includes(navLink.href)
+                                  ? "font-bold"
+                                  : "font-normal"
+                              }`}
+                            >
+                              {navLink.name}{" "}
+                              <TreeDown
+                                className={`w-4 h-4 inline-block transition-transform duration-200 ${
+                                  open ? "-scale-y-[1]" : ""
+                                }`}
+                              />
+                            </Disclosure.Button>
+                            <Disclosure.Panel>
+                              {navLink.dropdown?.map((item, i) => (
+                                <button
+                                  key={i}
+                                  onClick={() => close()}
+                                  className="block"
+                                >
+                                  <Link href={item.href}>
+                                    <a
+                                      className={`block ml-3 font-writing ${
+                                        router.pathname === item.href
+                                          ? "font-extrabold"
+                                          : "font-normal"
+                                      }`}
+                                      target={item.customProps?.target || ""}
+                                    >
+                                      {item.name}{" "}
+                                      {item.customProps?.target && (
+                                        <ArrowRightIcon className="h-4 w-4 inline-block transform -rotate-45" />
+                                      )}
+                                    </a>
+                                  </Link>
+                                </button>
+                              ))}
+                            </Disclosure.Panel>
+                          </>
+                        )}
+                      </Disclosure>
+                    )}
+                  </Fragment>
+                ))}
+              </ul>
+            )}
           </Popover.Panel>
         </>
       )}

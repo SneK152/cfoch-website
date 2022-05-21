@@ -6,8 +6,8 @@ export default function ArticleGrid() {
     <div className="px-10 py-5">
       {research.length !== 0 ? (
         <div
-          className={`grid mt-2 gap-5 ${
-            research.length === 1 ? "grid-cols-1" : "grid-cols-2"
+          className={`grid mt-2 gap-5 grid-cols-1 ${
+            research.length === 1 ? "sm:grid-cols-1" : "sm:grid-cols-2"
           }`}
         >
           {research.map((event) => (

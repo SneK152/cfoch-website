@@ -18,13 +18,13 @@ export default function LinkPage(props: LinkPageProps) {
     <div className="h-[calc(100vh-4rem)] w-full relative">
       <div className="z-10 absolute w-full h-full bg-darkgreen text-white mix-blend-multiply" />
       <div className="z-20 relative h-full w-full text-white flex gap-4 flex-col justify-center">
-        <h1 className="text-center text-7xl font-bold font-display">
+        <h1 className="text-center text-4xl sm:text-7xl font-bold font-display">
           {props.headingTitle}
         </h1>
-        <div className="flex justify-center gap-3 items-center px-2 w-full h-36 max-w-[100rem] sm:px-6 lg:px-6 mx-auto">
+        <div className="flex sm:flex-row flex-col justify-center gap-3 overflow-hidden items-center px-2 w-full sm:h-36 max-w-[100rem] sm:px-6 lg:px-6 mx-auto">
           {links.map((l) => (
             <Link href={l.href} key={l.name}>
-              <a className="text-black px-7 py-6 bg-blue hover:bg-opacity-100 text-4xl rounded-lg bg-opacity-80 hover:rounded-xl hover:-translate-y-2 transition-all duration-300 shadow-lg w-full h-full flex flex-col justify-center items-center">
+              <a className="text-black px-7 py-6 bg-blue hover:bg-opacity-100 text-3xl sm:text-4xl rounded-lg bg-opacity-80 sm:hover:rounded-xl sm:hover:-translate-y-2 sm:transition-all sm:duration-300 shadow-lg w-full h-full flex flex-col justify-center items-center">
                 {l.name}
               </a>
             </Link>
