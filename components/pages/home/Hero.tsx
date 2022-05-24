@@ -13,6 +13,8 @@ export default function Hero() {
         alt="Image of a mushroom surrounded by grass"
         objectFit="cover"
         className="object-center z-0 select-none selection:hidden"
+        draggable={false}
+        priority
       />
       <div className="bg-transparent w-full flex justify-center mt-[10vh] z-30">
         <h1 className="text-white font-display font-bold text-4xl sm:text-5xl md:text-7xl lg:text-6xl xl:text-7xl max-w-[15ch] text-center">

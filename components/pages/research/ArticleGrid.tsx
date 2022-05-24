@@ -23,7 +23,7 @@ export default function ArticleGrid() {
               </p>
               <Button
                 className="bg-black text-white"
-                href={event.article}
+                href={`/research/${event.article}`}
                 target="_blank"
               >
                 Learn More

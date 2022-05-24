@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 
-type Page = NextPage & {
+type Page<P = {}> = NextPage<P> & {
   title: string;
 };
 

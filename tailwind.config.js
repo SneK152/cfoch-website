@@ -21,5 +21,5 @@ module.exports = {
       display: ["Overpass", "sans"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
