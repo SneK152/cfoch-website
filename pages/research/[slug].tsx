@@ -20,7 +20,7 @@ const ResearchArticle: Page<{
   return (
     <>
       <Banner title={data.title} />
-      <div className="prose max-w-[100ch] lg:prose-lg mx-auto px-2 py-5 sm:px-6 lg:px-8">
+      <div className="prose max-w-[100ch] lg:prose-lg prose-stone mx-auto px-2 py-5 sm:px-6 lg:px-8">
         <h2>{data.date}</h2>
         <div dangerouslySetInnerHTML={{ __html: content }} />
         <h3>Sources Used</h3>

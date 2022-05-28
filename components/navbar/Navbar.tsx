@@ -1,11 +1,6 @@
 import TreeDown from "@components/icons/TreeDown";
 import { Disclosure, Popover } from "@headlessui/react";
-import {
-  ArrowRightIcon,
-  ChevronDownIcon,
-  MenuIcon,
-  XIcon,
-} from "@heroicons/react/outline";
+import { ArrowRightIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import navLinks from "@lib/data/navLinks";
 import Link from "next/link";
 import { useRouter } from "next/router";

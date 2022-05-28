@@ -25,8 +25,8 @@ export default function Banner(props: BannerProps) {
     // </div>
     <div className="w-full h-[calc(75vh-4rem)] flex justify-center relative overflow-hidden">
       <div className="w-0 h-0 absolute border-l-[90vw] lg:border-l-[40vw] border-l-transparent border-r-[90vw] lg:border-r-[40vw] border-r-transparent border-t-[90vw] lg:border-t-[40vw] border-t-darkgreen scale-y-[0.7] -translate-y-[15vw] lg:-translate-y-[7.5vw] z-20 mix-blend-multiply" />
-      <div className="bg-blue w-full h-[5.25vw] absolute z-10 mix-blend-color" />
-      <div className="w-0 h-0 absolute border-l-[90vw] lg:border-l-[40vw] border-l-transparent border-r-[90vw] lg:border-r-[40vw] border-r-transparent border-t-[90vw] lg:border-t-[40vw] border-t-blue scale-y-[0.7] -translate-y-[2vw] mix-blend-color lg:-translate-y-[2.3vw] z-10" />
+      <div className="bg-medium w-full h-[5.25vw] absolute z-10 mix-blend-color" />
+      <div className="w-0 h-0 absolute border-l-[90vw] lg:border-l-[40vw] border-l-transparent border-r-[90vw] lg:border-r-[40vw] border-r-transparent border-t-[90vw] lg:border-t-[40vw] border-t-medium scale-y-[0.7] -translate-y-[2vw] mix-blend-color lg:-translate-y-[2.3vw] z-10" />
       <Image
         src="/homepage.jpeg"
         layout="fill"

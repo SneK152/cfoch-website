@@ -12,7 +12,7 @@ export default function ArticleGrid() {
         >
           {research.map((event) => (
             <div
-              className="bg-lightgreen shadow-md flex justify-center items-center flex-col gap-2 p-5 rounded-xl"
+              className="bg-darkgreen text-white shadow-md flex justify-center items-center flex-col gap-2 p-5 rounded-xl"
               key={event.title}
             >
               <h2 className="text-2xl text-center font-display">

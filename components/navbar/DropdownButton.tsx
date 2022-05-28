@@ -29,8 +29,8 @@ export default function DropdownButton({
         <MyLink
           className={`${
             router.pathname === href
-              ? "bg-cyan-400 font-semibold"
-              : "hover:bg-cyan-300"
+              ? "bg-medium font-semibold"
+              : "hover:bg-dark hover:text-white"
           } block px-4 py-2 text-base text-black z-50`}
           target={target || "_self"}
           href={href}

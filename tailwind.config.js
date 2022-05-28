@@ -8,12 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        darkgreen: colors.green[800],
-        lightgreen: colors.emerald[400],
-        blue: {
-          DEFAULT: colors.cyan[200],
-        },
+        darkgreen: "#46856D",
+        lightgreen: "#66AD7E",
         black: "#031926",
+        light: "#E3C48F",
+        medium: "#B08556",
+        dark: "#965E30",
+        extradark: "#694B2A",
       },
     },
     fontFamily: {

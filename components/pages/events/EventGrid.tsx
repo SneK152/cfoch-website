@@ -20,7 +20,7 @@ export default function EventGrid(props: EventGridProps) {
           {props.events.map((event) => {
             return (
               <div
-                className="bg-lightgreen shadow-md flex justify-center items-center flex-col gap-2 p-5 rounded-xl"
+                className="bg-darkgreen text-white shadow-md flex justify-center items-center flex-col gap-2 p-5 rounded-xl"
                 key={event.name}
               >
                 <h2 className="text-2xl text-center font-display">
