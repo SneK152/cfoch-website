@@ -34,9 +34,6 @@ const navLinks: NavLink[] = [
       {
         name: "Donate",
         href: "/get-involved/donate",
-        customProps: {
-          target: "_blank",
-        },
       },
       {
         name: "Apply or Volunteer",

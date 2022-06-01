@@ -13,14 +13,14 @@ export default function EventGrid(props: EventGridProps) {
       </h1>
       {props.events.length !== 0 ? (
         <div
-          className={`grid mt-2 gap-5 ${
+          className={`grid place-items-start mt-2 gap-5 ${
             props.events.length === 1 ? "grid-cols-1" : "grid-cols-2"
           }`}
         >
           {props.events.map((event) => {
             return (
               <div
-                className="bg-darkgreen text-white shadow-md flex justify-center items-center flex-col gap-2 p-5 rounded-xl"
+                className="bg-darkgreen w-full text-white shadow-md flex justify-center items-center flex-col gap-2 p-5 rounded-xl"
                 key={event.name}
               >
                 <h2 className="text-2xl text-center font-display">

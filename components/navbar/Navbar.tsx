@@ -45,7 +45,11 @@ export default function Navbar() {
                           navLink={item}
                         >
                           {item.dropdown.map((d) => (
-                            <DropdownButton key={d.href} href={d.href}>
+                            <DropdownButton
+                              key={d.href}
+                              href={d.href}
+                              {...d.customProps}
+                            >
                               {d.name}
                             </DropdownButton>
                           ))}

@@ -1,16 +1,21 @@
 import CEvent from "@lib/types/CEvent";
+import Image from "next/image";
 
 const events: CEvent[] = [
   {
-    name: "East meets West Talk - Caring for our Common Home",
+    name: "Lynbrook High School Student-Led Ecofeminism Protest Speech",
+    media: <img src="/media.png" alt="Protest images" />,
     description: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Diam donec
-        adipiscing tristique risus nec feugiat in fermentum. Est ullamcorper
-        eget nulla facilisi etiam dignissim.
+        All photos taken by Sruti Elangovan (@srutielangovanphoto) on May 18,
+        2022
       </>
     ),
+    type: "previous",
+  },
+  {
+    name: "East meets West Talk - Caring for our Common Home",
+    description: <></>,
     media: (
       <iframe
         src="https://www.youtube.com/embed/53LbDXQ5Mfk"
