@@ -24,7 +24,7 @@ export const team: Person[] = [
   },
   {
     name: "Harita Sunkara",
-    roles: ["Web Designer"],
+    roles: ["Web Designer", "Marketing"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam donec adipiscing tristique risus nec feugiat in fermentum. Est ullamcorper eget nulla facilisi etiam dignissim.",
     image: "/team/Harita Sunkara.jpeg",
