@@ -6,19 +6,23 @@ const navLinks: NavLink[] = [
     href: "/",
   },
   {
-    name: "About",
-    href: "/about",
-    dropdown: [
-      {
-        name: "Our Organization",
-        href: "/about/organization",
-      },
-      {
-        name: "Our Team",
-        href: "/about/team",
-      },
-    ],
+    name: "Our Team",
+    href: "/about/team",
   },
+  // {
+  //   name: "About",
+  //   href: "/about",
+  //   dropdown: [
+  //     {
+  //       name: "Our Organization",
+  //       href: "/about/organization",
+  //     },
+  //     {
+  //       name: "Our Team",
+  //       href: "/about/team",
+  //     },
+  //   ],
+  // },
   {
     name: "Events",
     href: "/events",

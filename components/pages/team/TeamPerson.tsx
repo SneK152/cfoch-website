@@ -28,7 +28,7 @@ export default function TeamPerson(props: TeamPersonProps) {
           )
         )}
       </p>
-      <p className="text-base text-left mt-3">{props.person.description}</p>
+      {/* <p className="text-base text-left mt-3">{props.person.description}</p> */}
     </div>
   );
 }
