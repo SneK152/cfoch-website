@@ -1,5 +1,11 @@
 import CEvent from "@lib/types/CEvent";
-import Image from "next/image";
+import { AnchorHTMLAttributes } from "react";
+
+const Link = (props: AnchorHTMLAttributes<HTMLAnchorElement>) => (
+  <a className="underline" {...props} target="_blank" rel="noreferrer noopener">
+    {props.children}
+  </a>
+);
 
 const events: CEvent[] = [
   {
@@ -7,8 +13,11 @@ const events: CEvent[] = [
     media: <img src="/media.png" alt="Protest images" />,
     description: (
       <>
-        All photos taken by Sruti Elangovan (@srutielangovanphoto) on May 18,
-        2022
+        All photos taken by{" "}
+        <Link href="https://instagram.com/srutielangovanphoto">
+          Sruti Elangovan
+        </Link>{" "}
+        on May 18, 2022
       </>
     ),
     type: "previous",
