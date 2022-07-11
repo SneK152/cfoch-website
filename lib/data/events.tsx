@@ -32,7 +32,7 @@ const events: CEvent[] = [
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="w-full sm:w-96 sm:h-96"
+        className="w-full h-full"
       ></iframe>
     ),
     type: "previous",
