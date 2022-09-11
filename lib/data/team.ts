@@ -30,10 +30,10 @@ export const team: Person[] = [
     image: "/team/Harita Sunkara.jpeg",
   },
   {
-    name: "Claire Wang",
+    name: "Julia Myers",
     roles: ["Research"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam donec adipiscing tristique risus nec feugiat in fermentum. Est ullamcorper eget nulla facilisi etiam dignissim.",
-    image: "/team/Claire Wang.jpeg",
+    image: "/team/Julia Myers.png",
   },
 ];

@@ -7,7 +7,7 @@ interface EventGridProps {
 
 export default function EventGrid(props: EventGridProps) {
   return (
-    <div className="px-10 py-5">
+    <div className="px-10 py-5 padded-section">
       <h1 className="text-3xl font-bold font-display text-center">
         {props.title}
       </h1>

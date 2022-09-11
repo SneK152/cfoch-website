@@ -3,7 +3,7 @@ import research from "@lib/data/research";
 
 export default function ArticleGrid() {
   return (
-    <div className="px-10 py-5">
+    <div className="px-10 py-5 padded-section">
       {research.length !== 0 ? (
         <div
           className={`grid mt-2 gap-5 grid-cols-1 ${

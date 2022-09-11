@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import CEvent from "@lib/types/CEvent";
 import { AnchorHTMLAttributes } from "react";
 

@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .padded-section {
+    @apply max-w-[100rem] mx-auto px-2 sm:px-8;
+  }
+}

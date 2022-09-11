@@ -37,6 +37,7 @@ const ResearchArticle: Page<{
     </>
   );
 };
+
 ResearchArticle.title = "";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
