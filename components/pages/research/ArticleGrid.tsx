@@ -1,7 +1,7 @@
 import Button from "@components/layout/Button";
-import research from "@lib/data/research";
+import Research from "@lib/types/Research";
 
-export default function ArticleGrid() {
+export default function ArticleGrid({ research }: { research: Research[] }) {
   return (
     <div className="px-10 py-5 padded-section">
       {research.length !== 0 ? (

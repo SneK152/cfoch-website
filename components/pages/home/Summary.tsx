@@ -41,7 +41,7 @@ export default function Summary() {
             create a hope-filled future.
           </p>
         </div>
-        <div className="relative overflow-hidden bg-white rounded-xl cursor-grab active:cursor-grabbing shadow-md h-96">
+        <div className="relative overflow-hidden bg-white rounded-xl cursor-grab active:cursor-grabbing shadow-md h-[50rem]">
           <button
             className="absolute h-full top-0 bottom-0 left-0 z-[1] flex items-center justify-center sm:w-[10%] w-[15%] p-0 text-white text-center bg-none border-0"
             onClick={slideToPrevItem}

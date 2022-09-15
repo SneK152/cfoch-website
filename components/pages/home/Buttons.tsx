@@ -5,15 +5,16 @@ export default function Buttons() {
     <div className="flex justify-center items-center gap-3 pt-1 pb-10 col-span-3 padded-section">
       <Button
         className="bg-darkgreen text-white text-lg w-full max-w-[20rem]"
-        href="/about/organization"
+        href="/get-involved/apply"
+        target="_blank"
       >
-        Learn More
+        Get Involved
       </Button>
       <Button
         className="bg-black text-white text-lg w-full max-w-[20rem]"
         href="/events"
       >
-        Upcoming Events
+        Events
       </Button>
       <Button
         className="bg-lightgreen text-black text-lg w-full max-w-[20rem]"
