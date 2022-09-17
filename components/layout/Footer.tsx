@@ -49,12 +49,13 @@ const socials: Social[] = [
 
 export default function Footer() {
   return (
-    <footer className="bg-lightgreen text-black p-4 text-center">
+    <footer className="bg-lightgreen text-black p-4 space-y-1 text-center">
       <h1 className="font-display font-bold text-3xl">
-        Care for our Common Home
+        © 2022 | Care for our Common Home Foundation
       </h1>
       <h2 className="text-xl">
-        A 501(c)3 organization committed to helping the Earth
+        A US 501(c)3 organization committed to helping the Earth, Federal EIN:
+        86-2868869
       </h2>
       <div className="flex flex-row gap-2 justify-center items-center">
         {socials.map((social) => (
