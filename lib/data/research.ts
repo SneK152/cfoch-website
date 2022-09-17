@@ -31,6 +31,12 @@ const research: Research[] = [
       "Dead zones are low oxygen regions in water, also called hypoxic regions. They are called “dead zones” because of the lack of life in those areas.",
     article: "dead-zones",
   },
+  {
+    title: "Emission Trading",
+    description:
+      "Emissions trading is a system in which a regional or national government gives or auctions allowances to corporations on how many tons of emission they can produce, and corporations must pay a fee for every ton of emission they produce beyond the allowance.",
+    article: "emission-trading",
+  },
 ];
 
 export default research;
