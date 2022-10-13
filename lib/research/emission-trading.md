@@ -12,6 +12,7 @@ sources:
     https://news.illinois.edu/view/6367/205194,
     https://www.epa.gov/acidrain/acid-rain-program,
   ]
+author: "Julia Myers"
 ---
 
 Emissions trading is a system in which a regional or national government gives or auctions allowances to corporations on how many tons of emission they can produce, and corporations must pay a fee for every ton of emission they produce beyond the allowance. Enforcement involves continuously monitoring emissions from each site. Surplus allowances can be sold to other companies on the open market, generally in units of one ton. Because going over the allowance results in a fee, and not using all of one's allowance allows companies to sell the surplus allowances to other companies, this system makes reducing emissions the most profitable option for companies.

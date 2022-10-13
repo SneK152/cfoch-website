@@ -7,7 +7,7 @@ const navLinks: NavLink[] = [
   },
   {
     name: "Our Team",
-    href: "/about/team",
+    href: "/team",
   },
   // {
   //   name: "About",
@@ -30,6 +30,17 @@ const navLinks: NavLink[] = [
   {
     name: "Research",
     href: "/research",
+  },
+  {
+    name: "Media",
+    href: "/media",
+  },
+  {
+    name: "PVSA",
+    href: "/pvsa",
+    customProps: {
+      target: "_blank",
+    },
   },
   {
     name: "Get Involved",

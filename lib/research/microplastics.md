@@ -9,6 +9,7 @@ sources:
     "https://www.bbc.com/news/science-environment-52489126",
     "https://www.youtube.com/watch?v=LiH3f6AKFbc",
   ]
+author: "Claire Wang"
 ---
 
 Every year, 5-14 million tons of plastic are dumped into the ocean. This means 500 pounds of plastic enter the ocean every second. However, if that much plastic entered the ocean every year, then visible, floating plastic debris would only account for about 1% of the total trash in the ocean. Where is the other 99%?

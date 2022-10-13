@@ -8,6 +8,7 @@ sources:
     "https://www.nationalgeographic.org/encyclopedia/dead-zone/",
     "https://serc.carleton.edu/integrate/teaching_materials/food_supply/student_materials/1114",
   ]
+author: "Claire Wang"
 ---
 
 ![A lake with no fish](https://i2.wp.com/www.circleofblue.org/wp-content/uploads/2014/09/DianchiLakeAlgae.jpg?fit=640%2C429&ssl=1)

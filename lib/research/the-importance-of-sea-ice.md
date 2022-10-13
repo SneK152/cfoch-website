@@ -8,6 +8,7 @@ sources:
     "https://www.whoi.edu/know-your-ocean/ocean-topics/polar-research/sea-ice/",
     "https://www.climate.gov/news-features/understanding-climate/climate-change-minimum-arctic-sea-ice-extent",
   ]
+author: "Claire Wang"
 ---
 
 Sea ice is frozen ocean water. It grows and melts in the ocean, and most of it is found in the Arctic and Antarctica. Sea ice has a huge impact on our global climate.

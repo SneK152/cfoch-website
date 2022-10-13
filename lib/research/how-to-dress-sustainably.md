@@ -10,6 +10,7 @@ sources:
     "https://goodonyou.eco/material-guide-ethical-denim/",
     "https://www.youtube.com/watch?v=elU32XNj8PM",
   ]
+author: "Claire Wang"
 ---
 
 Did you know that it can take 2700 liters of water just to make a cotton T-shirt and 3781 liters of water to make a pair of jeans? This is because cotton is an extremely drought intolerant plant. Cotton also only takes up 2.5% of agricultural land but accounts for 16% of pesticides and 6.8% of herbicides used in the world. These chemicals heavily damage the environment and harm the soil. Not to mention, the earth is incapable of absorbing the number of clothes that are made and thrown away every year. It is estimated that about 99% of used clothes end up being in a landfill, where they may be burnt.

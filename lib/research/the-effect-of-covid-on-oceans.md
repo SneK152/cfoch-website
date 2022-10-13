@@ -9,6 +9,7 @@ sources:
     "https://time.com/5936110/underwater-noise-pollution-report/",
     "https://www.greenbiz.com/article/collateral-damage-covid-19s-impact-ocean-plastic-pollution",
   ]
+author: "Claire Wang"
 ---
 
 With the economy shutting down for the past year due to COVID-19 and only reopening only a few months ago, you might think that the ocean is doing significantly better because of less greenhouse gas being released into the air and less human activity. This is true to some extent, but at the same time there are new problems that come along.
