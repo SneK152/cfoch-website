@@ -2,7 +2,13 @@ import Button from "@components/layout/Button";
 
 export default function Buttons() {
   return (
-    <div className="flex justify-center items-center gap-3 pt-1 pb-10 col-span-3 padded-section">
+    <div className="flex justify-center items-center gap-3 pt-1 pb-10 col-span-4 padded-section">
+      <Button
+        className="bg-dark text-white text-lg w-full max-w-[20rem]"
+        href="/about"
+      >
+        Learn More
+      </Button>
       <Button
         className="bg-darkgreen text-white text-lg w-full max-w-[20rem]"
         href="/get-involved/apply"

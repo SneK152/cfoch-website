@@ -32,13 +32,17 @@ export default function Summary() {
       <div className="w-full flex flex-col gap-5 overflow-hidden">
         <div className="grid place-items-center">
           <p className="text-xl font-light">
-            Care for our Common Home Foundation is committed to journeying with
-            youth to create a platform for promoting environmental and social
-            innovations, aiming to uphold environmental justice and realize
-            sustainable development. Our goal is to improve the common home we
-            share by enhancing environmental awareness and doing our part of
-            each person{"'"}s social responsibility, regardless of age, to
-            create a hope-filled future.
+            Welcome to Care for our Common Home Foundation (CFOCH), a private,
+            nonprofit organization headquartered in San Jose, California. We are
+            committed to journeying with youth to create a platform for
+            promoting environmental and social innovations, aiming to uphold
+            environmental justice and realize sustainable development. Our goal
+            is to improve the common home we share by enhancing environmental
+            awareness and doing our part of each person{"'"}s social
+            responsibility, regardless of age, to create a hope-filled future.
+            We are run completely by student volunteers and believe that
+            everyone, regardless of age, can make contributions and strive to
+            improve our common home.
           </p>
         </div>
         <div className="relative overflow-hidden bg-white rounded-xl cursor-grab active:cursor-grabbing shadow-md h-[50rem]">

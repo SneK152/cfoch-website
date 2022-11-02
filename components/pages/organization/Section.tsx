@@ -10,7 +10,7 @@ interface SectionProps {
 
 export default function Section(props: SectionProps) {
   return (
-    <div className="w-full grid p-6 gap-5 grid-cols-12 sm:h-96">
+    <div className="w-full grid p-6 gap-5 grid-cols-12 sm:min-h-96">
       <div
         className={`sm:col-span-5 col-span-12 relative h-36 w-full sm:h-full ${
           props.side === "left" ? "sm:order-1" : "sm:order-2"
