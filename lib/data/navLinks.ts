@@ -10,20 +10,12 @@ const navLinks: NavLink[] = [
     href: "/team",
   },
   {
-    name: "About Us",
-    href: "/about",
-  },
-  {
     name: "Events",
     href: "/events",
   },
   {
     name: "Research",
     href: "/research",
-  },
-  {
-    name: "Media",
-    href: "/media",
   },
   {
     name: "PVSA",
