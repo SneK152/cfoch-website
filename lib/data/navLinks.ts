@@ -35,7 +35,7 @@ const navLinks: NavLink[] = [
       },
       {
         name: "Presidential Volunteer Service Award",
-        href: "/pvsa",
+        href: "/get-involved/pvsa",
         customProps: {
           target: "_blank",
         },
