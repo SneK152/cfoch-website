@@ -5,7 +5,7 @@ const PVSAPage: Page = () => {
   return <></>;
 };
 
-PVSAPage.title = "Apply";
+PVSAPage.title = "PVSA";
 
 export const getServerSideProps: GetServerSideProps = async () => {
   return {

@@ -8,11 +8,11 @@ export default function Preview() {
     <>
       <br />
       <Header>
-        Research Preview
+        Our Research
         <br />
         <Link href="/research">
           <a className="text-base font-sans font-normal underline hover:text-blue-600">
-            Learn More
+            See More
           </a>
         </Link>
       </Header>

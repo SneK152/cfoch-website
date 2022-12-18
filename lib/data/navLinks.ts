@@ -17,13 +17,7 @@ const navLinks: NavLink[] = [
     name: "Research",
     href: "/research",
   },
-  {
-    name: "PVSA",
-    href: "/pvsa",
-    customProps: {
-      target: "_blank",
-    },
-  },
+
   {
     name: "Get Involved",
     href: "/get-involved",
@@ -33,8 +27,15 @@ const navLinks: NavLink[] = [
         href: "/get-involved/donate",
       },
       {
-        name: "Apply or Volunteer",
+        name: "Join Us",
         href: "/get-involved/apply",
+        customProps: {
+          target: "_blank",
+        },
+      },
+      {
+        name: "Presidential Volunteer Service Award",
+        href: "/pvsa",
         customProps: {
           target: "_blank",
         },

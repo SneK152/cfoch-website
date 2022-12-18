@@ -32,7 +32,7 @@ export default function Section(props: SectionProps) {
         }`}
       >
         <h1 className="text-3xl font-display font-bold">{props.title}</h1>
-        <p className="text-xl">{props.children}</p>
+        <div className="text-xl">{props.children}</div>
       </div>
     </div>
   );

@@ -1,11 +1,17 @@
-import Button from "@components/layout/Button";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 import { homepageCarouselImages } from "@lib/data/images";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useSpringCarousel } from "react-spring-carousel";
 import { Header } from "./Header";
 
 export default function Summary() {
+  const withSlide = (fn: () => void) => {
+    return () => {
+      setReset((r) => !r);
+      fn();
+    };
+  };
   const { carouselFragment, slideToNextItem, slideToPrevItem } =
     useSpringCarousel({
       withLoop: true,
@@ -25,6 +31,18 @@ export default function Summary() {
         ),
       })),
     });
+
+  const [reset, setReset] = useState(false);
+
+  useEffect(() => {
+    setInterval(() => {
+      slideToNextItem();
+    }, 5000);
+
+    return () => {
+      clearInterval(undefined);
+    };
+  }, [slideToNextItem, reset]);
 
   return (
     <div className="p-10 space-y-2 padded-section">
@@ -48,14 +66,14 @@ export default function Summary() {
         <div className="relative overflow-hidden bg-white rounded-xl cursor-grab active:cursor-grabbing shadow-md h-[50rem]">
           <button
             className="absolute h-full top-0 bottom-0 left-0 z-[1] flex items-center justify-center sm:w-[10%] w-[15%] p-0 text-white text-center bg-none border-0"
-            onClick={slideToPrevItem}
+            onClick={withSlide(slideToPrevItem)}
           >
             <ChevronLeftIcon className="w-9 h-9 p-1" />
           </button>
           {carouselFragment}
           <button
             className="absolute h-full top-0 bottom-0 right-0 z-[1] flex items-center justify-center sm:w-[10%] w-[15%] p-0 text-white text-center bg-none border-0"
-            onClick={slideToNextItem}
+            onClick={withSlide(slideToNextItem)}
           >
             <ChevronRightIcon className="w-9 h-9 p-1" />
           </button>

@@ -25,7 +25,7 @@ const events: CEvent[] = [
   },
   {
     name: "East meets West Talk - Caring for our Common Home",
-    description: <></>,
+    description: <>July 16, 2021</>,
     media: (
       <iframe
         src="https://www.youtube.com/embed/53LbDXQ5Mfk"

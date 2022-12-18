@@ -3,7 +3,11 @@ import Section from "../organization/Section";
 export default function Organization() {
   return (
     <>
-      <Section side="left" image="/homepage.jpeg" title="Our Mission">
+      <Section
+        side="left"
+        image="https://source.unsplash.com/random/?nature"
+        title="Our Mission"
+      >
         Research shows that although students take many courses on environmental
         issues, their environmentally-aware actions are lower than expected.
         Environmental knowledge does not always influence awareness and
@@ -17,7 +21,11 @@ export default function Organization() {
         the goal, we envision inspiring individuals and corporations to amplify
         their contributions to fulfill their roles in environmental justice.
       </Section>
-      <Section side="right" image="/homepage.jpeg" title="Our Name">
+      <Section
+        side="right"
+        image="https://source.unsplash.com/random/?globe"
+        title="Our Name"
+      >
         The name of our foundation comes from the subtitle to Pope Francis{"'"}s
         encyclical Laudato Si{"'"}, “on care for our common home”. In it, the
         Pope makes a statement on how climate change is real and calls all
@@ -34,7 +42,11 @@ export default function Organization() {
         </a>
         .
       </Section>
-      <Section side="left" image="/homepage.jpeg" title="Our Beliefs">
+      <Section
+        side="left"
+        image="https://source.unsplash.com/random/?moral"
+        title="Our Beliefs"
+      >
         <ul className="list-disc">
           <li>
             It is a social responsibility to take care of our environment. This
@@ -76,7 +88,11 @@ export default function Organization() {
         our Earth, regardless of the immediate impact of pollution or climate
         change.
       </Section>
-      <Section side="right" image="/homepage.jpeg" title="Our Values">
+      <Section
+        side="right"
+        image="https://source.unsplash.com/random/?teamwork"
+        title="Our Values"
+      >
         <ul className="list-disc">
           <li>
             Community - We value coming together to improve the environment. No
@@ -107,7 +123,11 @@ export default function Organization() {
           </li>
         </ul>
       </Section>
-      <Section side="left" image="/homepage.jpeg" title="Our Goals">
+      <Section
+        side="left"
+        image="https://source.unsplash.com/random/?achievement"
+        title="Our Goals"
+      >
         <ul className="list-disc">
           <li>
             Empower youth to take action and create a community of people who
@@ -129,7 +149,11 @@ export default function Organization() {
           <li>Give youth an opportunity to fight for a brighter future</li>
         </ul>
       </Section>
-      <Section side="right" image="/homepage.jpeg" title="How You Can Help">
+      <Section
+        side="right"
+        image="https://source.unsplash.com/random/?help"
+        title="How You Can Help"
+      >
         <ul>
           <li>
             <a
@@ -138,9 +162,9 @@ export default function Organization() {
               rel="noreferrer noopener"
               className="text-blue-500 underline"
             >
-              Volunteer for
+              Volunteer
             </a>{" "}
-            or{" "}
+            for or{" "}
             <a
               href="/get-involved/donate"
               target="_blank"
@@ -162,6 +186,8 @@ export default function Organization() {
           </li>
           <li>Reduce the use of plastics</li>
         </ul>
+        Care for our Common Home Foundation is a certifying organization of the
+        President{"'"}s Volunteer Service Award.
       </Section>
     </>
   );
