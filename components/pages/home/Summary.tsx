@@ -34,15 +34,15 @@ export default function Summary() {
 
   const [reset, setReset] = useState(false);
 
-  useEffect(() => {
-    setInterval(() => {
-      slideToNextItem();
-    }, 5000);
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     slideToNextItem();
+  //   }, 5000);
 
-    return () => {
-      clearInterval(undefined);
-    };
-  }, [slideToNextItem, reset]);
+  //   return () => {
+  //     clearInterval(undefined);
+  //   };
+  // }, [slideToNextItem, reset]);
 
   return (
     <div className="p-10 space-y-2 padded-section">
